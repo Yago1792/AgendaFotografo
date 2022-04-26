@@ -1,0 +1,134 @@
+<%- include('includes/head') %>
+<%- include('includes/nav') %>
+  <div class="container">
+    <h1 class="tituloAgenda">Editar</h1>
+    <h6>Cliente: <%= ensaio.cliente %>
+    </h6>
+
+
+    <div class="formHolder">
+      <form action="/ensaios/edited/<%= ensaio._id %>" class="form" method="POST">
+        <input type="hidden" name="_csrf" value=<%=csrfToken %>>
+        <table>
+          <tr>
+            <th>
+              <input value="<%= ensaio.numero %>" name="numero" class="inputCerq getInputValue" placeholder="#">
+            </th>
+            <th>
+              <input value="<%= ensaio.data %>" name="data" class="inputData getInputValue" type="datetime-local"
+                class="inputData">
+            </th>
+            <th>
+              <select value="<%= ensaio.pagamento %>" name="pagamento" class="inputPagamento getInputValue">
+                <option disabled="disabled" selected="selected" hidden="hidden">
+                  <%= ensaio.pagamento %>
+                </option>
+                <optgroup>
+                  <option value="Integral">Integral</option>
+                  <option value="Divulgacao">Divulgacao</option>
+                  <option value="Sinal">Sinal</option>
+                  <option value="Não pago">Não pago</option>
+                </optgroup>
+              </select>
+            </th>
+            <th>
+              <select value="<%= ensaio.ensaio %>" name="ensaio" class="inputEnsaio getInputValue">
+                <option disabled="disabled" selected="selected" hidden="hidden">
+                  <%= ensaio.ensaio %>
+                </option>
+                <optgroup>
+                  <option value="Gestante">Gestante</option>
+                  <option value="Infantil">Infantil</option>
+                  <option value="Aniversario">Aniversario</option>
+                  <option value="15 Anos">15 Anos</option>
+                  <option value="Casamento">Casamento</option>
+                  <option value="Familia">Familia</option>
+                  <option value="New-Born">New-Born</option>
+                  <option value="Acompanhamento">Acompanhamento</option>
+                  <option value="Casamento">Casamento</option>
+                  <option value="Outro">Outro</option>
+                </optgroup>
+            </th>
+            <th>
+              <input value="<%= ensaio.cliente %>" name="cliente" class="inputCliente getInputValue"
+                placeholder="Cliente">
+            </th>
+            <th class="thValor">
+              <div class="divValor">
+                <select class="inputValor valorSelect inputMoedaValor ">
+                  <optgroup>
+                    <option value="R$ ">R$</option>
+                    <option value="US$">US$</option>
+                  </optgroup>
+                  <input value="<%= ensaio.valor %>" name="valorReais" class="inputValor reais reaisValor getInputValue"
+                    placeholder="0" value="0">
+                  <div class="virg">,</div>
+                  <input name="valorCentavos" class="inputValor centavos centavosValor getInputValue" value="0">
+              </div>
+            </th>
+            <th class="thLocacao">
+              <div class="divLocacao">
+                <select class="locacaoSelect inputMoedaLocacao ">
+                  <optgroup>
+                    <option value="R$">R$</option>
+                    <option value="US$">US$</option>
+                  </optgroup>
+                  <input value="<%= ensaio.locacao %>" name="locacaoReais" class="reais reaisLocacao getInputValue"
+                    placeholder="0" value="0">
+                  <div class="virg">,</div>
+                  <input name="locacaoCentavos" class="centavos centavosLocacao getInputValue" value="00">
+              </div>
+            </th>
+            <th>
+              <input class="inputLucro" placeholder="Soma Automatica" disabled>
+            </th>
+            <th>
+              <select value="<%= ensaio.local %>" name="local" class="inputLocal getInputValue">
+                <option disabled="disabled" selected="selected" hidden="hidden">
+                  <%= ensaio.local %>
+                </option>
+                <optgroup>
+                  <option value="Interno">Interno</option>
+                  <option value="Lago das Carpas">L. das Carpas</option>
+                  <option value="Fazenda Avelar">Faz. Avelar</option>
+                  <option value="Lucia">Lucia</option>
+                  <option value="UFRRJ">UFRRJ</option>
+                  <option value="Outro">Outro</option>
+                </optgroup>
+            </th>
+            <th>
+              <input value="<%= ensaio.descricao %>" name="descricao" class="inputDescricao getInputValue"
+                placeholder="Descrição">
+            </th>
+            <th>
+              <select value="<%= ensaio.status %>" name="status" class="inputStatus getInputValue">
+                <option disabled="disabled" selected="selected" hidden="hidden">
+                  <%= ensaio.status %>
+                </option>
+                <optgroup>
+                  <option value="Agendado">Agendado</option>
+                  <option value="Fotografado">Fotografado</option>
+                  <option value="Editado">Editado</option>
+                  <option value="Finalizado">Finalizado</option>
+                  <option value="Outro">Outro</option>
+                </optgroup>
+            </th>
+            <th>
+              <div class="edit-holder">
+            </th>
+            <th>
+              <div class="delete-holder">
+            </th>
+          </tr>
+
+        </table>
+        <div class="opcoes">
+          <button class="btn"> Editar <span class="coracao"> ♥ </span></button>
+        </div>
+      </form>
+
+     
+
+    </div>
+
+    <%- include('includes/footer') %>
