@@ -1,0 +1,6 @@
+<nav class="navbar">
+    <% if(user) { %>
+    <div class="btn btn-fit-content">Logged as: <%= user.email %></div>
+    <a href="/login/logout"><button class="btn">Sair</button></a>
+    <% } %>
+</nav>

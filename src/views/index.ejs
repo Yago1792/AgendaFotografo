@@ -1,0 +1,141 @@
+<%- include('includes/head') %>
+  <%- include('includes/nav') %>
+    <div class="container">
+      <h1 class="tituloAgenda">Agenda 2022</h1>
+      <div class="total">R$</div>
+
+      <%- include('includes/messages') %>
+
+        <div class="formHolder">
+          <form action="/" class="form" method="POST" autocomplete="off" id="form">
+            <input type="hidden" name="_csrf" value=<%=csrfToken %>>
+            <table>
+              <tr>
+                <th>
+                  <label>#</label>
+                  <input name="numero" class="inputCerq getInputValue" >
+                </th>
+                <th>
+                  <label>Data</label>
+                  <input name="data" class="inputData getInputValue" type="datetime-local" class="inputData">
+                </th>
+                <th>
+                  <label>Pagamento</label>
+                  <select name="pagamento" class="inputPagamento getInputValue">
+                    <option disabled="disabled" selected="selected" hidden="hidden"></option>
+                    <optgroup>
+                      <option value="Integral">Integral</option>
+                      <option value="Divulgacao">Divulgacao</option>
+                      <option value="Sinal">Sinal</option>
+                      <option value="Não pago">Não pago</option>
+                    </optgroup>
+                  </select>
+                </th>
+                <th>
+                  <label>Ensaio</label>
+                  <select name="ensaio" class="inputEnsaio getInputValue">
+                    <option disabled="disabled" selected="selected" hidden="hidden"></option>
+                    <optgroup>
+                      <option value="Gestante">Gestante</option>
+                      <option value="Infantil">Infantil</option>
+                      <option value="Aniversario">Aniversario</option>
+                      <option value="15 Anos">15 Anos</option>
+                      <option value="Casamento">Casamento</option>
+                      <option value="Familia">Familia</option>
+                      <option value="New-Born">New-Born</option>
+                      <option value="Acompanhamento">Acompanhamento</option>
+                      <option value="Casamento">Casamento</option>
+                      <option value="Outro">Outro</option>
+                    </optgroup>
+                </th>
+                <th>
+                  <label>Cliente</label>
+                  <input name="cliente" class="inputCliente getInputValue" >
+                </th>
+                <th class="thValor">
+                  <label>Valor pacote</label>
+                  <div class="divValor">
+                    <select class="inputValor valorSelect inputMoedaValor ">
+                      <optgroup>
+                        <option value="R$ ">R$</option>
+                        <option value="US$">US$</option>
+                      </optgroup>
+                      <input name="valorReais" class="inputValor reais reaisValor getInputValue" placeholder="0"
+                        value="0">
+                      <div class="virg">,</div>
+                      <input name="valorCentavos" class="inputValor centavos centavosValor getInputValue" value="00">
+                  </div>
+                </th>
+                <th class="thLocacao">
+                  <label>Valor locação</label>
+                  <div class="divLocacao">
+                    <select class="locacaoSelect inputMoedaLocacao ">
+                      <optgroup>
+                        <option value="R$">R$</option>
+                        <option value="US$">US$</option>
+                      </optgroup>
+                      <input name="locacaoReais" class="reais reaisLocacao getInputValue" placeholder="0" value="0">
+                      <div class="virg">,</div>
+                      <input name="locacaoCentavos" class="centavos centavosLocacao getInputValue" value="00">
+                  </div>
+                </th>
+                <th>
+                  <label>Lucro</label>
+                  <div class="inputLucro">Soma automática</div>
+                </th>
+                <th>
+                  <label>Local</label>
+                  <select name="local" class="inputLocal getInputValue">
+                    <option disabled="disabled" selected="selected" hidden="hidden"></option>
+                    <optgroup>
+                      <option value="Interno">Interno</option>
+                      <option value="Lago das Carpas">L. das Carpas</option>
+                      <option value="Fazenda Avelar">Faz. Avelar</option>
+                      <option value="Lucia">Lucia</option>
+                      <option value="UFRRJ">UFRRJ</option>
+                      <option value="Outro">Outro</option>
+                    </optgroup>
+                </th>
+                <th>
+                  <label>Descrição</label>
+                  <input name="descricao" class="inputDescricao getInputValue" >
+                </th>
+                <th>
+                  <label>Status</label>
+                  <select name="status" class="inputStatus getInputValue">
+                    <option disabled="disabled" selected="selected" hidden="hidden"></option>
+                    <optgroup>
+                      <option value="Agendado">Agendado</option>
+                      <option value="Fotografado">Fotografado</option>
+                      <option value="Editado">Editado</option>
+                      <option value="Finalizado">Finalizado</option>
+                      <option value="Outro">Outro</option>
+                    </optgroup>
+                </th>
+                <th>
+                  <div class="edit-holder">
+                </th>
+                <th>
+                  <div class="delete-holder">
+                </th>
+              </tr>
+
+
+
+            </table>
+
+
+          </form>
+          <div class="opcoes">
+            <button class="btn btn-AddNew" form="form"> Add New <span class="coracao"> ♥ </span></button>
+            <button class="btn btn-clear">Clear </button>
+            <button  class="btn btn-delete-all" >Delete All</button>
+          </div>
+        </div>
+
+        <%- include('includes/ensaios') %>
+
+
+    </div>
+
+    <%- include('includes/footer') %>
