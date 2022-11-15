@@ -4,13 +4,14 @@ Olá,
 Meu nome é Yago Aguiar e falarei nesse read me um pouco sobre mim e sobre essa aplicação. Caso queira apenas saber como utiliza-la ou até mesmo como
 avalia-la, siga para a seção "Como usar:".
 
-Quem sou eu:
+ <h1>  Quem sou eu: 😎 </h1>
 Meu nome é Yago Aguiar, tinha 28 anos quando desenvolvi essa aplicação (2021), sou Mineiro, mas hoje moro no Rio de Janeiro junto com minha esposa. Sou formado em engenharia mecatrônica pela PUC-MG (2016) e na faculdade conheci um pouco sobre a programação que foi onde eu me apaixonei pela área, mas naquela época ainda não segui carreira, pois voltei pra minha cidade natal após formar para ajudar minha mãe com negócios da família. Em 2019, resolvi comprar alguns cursos da Udemy e seguir forte nessa área de TI, que era o que eu realmente queria. Hoje, estou cursando uma segunda graduação (Ciências da computação) pela UNIP EAD e trabalho como desenvolvedor back-end júnior pela FalifeTec (2022).
 
-Minha motivação para desenvolver essa aplicação:
+<h1>  Minha motivação para desenvolver essa aplicação: 👍</h1>
 Desenvolvi essa aplicação web com dois propósitos. O primeiro foi de treinar, fixar e agrupar em um projeto próprio, o conteúdo do curso de javascript/typescript que fiz em 2021 na plataforma da Udemy, lecionado pelo professor Luiz Otávio. O segundo propósito foi de desenvolver uma aplicação web que atende-se as necessidades da minha esposa (fotógrafa) para que ela se livrasse da agenda física e passasse a usar a aplicação como uma agenda onde ela poderia acessa-la até mesmo pelo celular pela web.
 
-Como usar:
+<h1>Como usar: 🤷‍♂️ </h1>
+
 Existem duas formas para avaliação da aplicação.
 
 Opção 1:
@@ -44,7 +45,7 @@ Novamente: Note que caso voce nao crie uma conta propria para testes, voce irá 
 - Pronto, agora é só preencher os campos para cadastrar um novo ensaio, editar, ou excluir um ensaio ja cadastrado.
 Dica: Faça testes de adicionar dados sem preencher todos os campos. Edite ensaios ja cadastrados. Limpe os campos de inserção de dados do ensaio com o botão clear. Exclua ensaios ou delete todos (Delete all) os ensaios cadastrados, etc, enfim, obrigado por estar aqui e espero que tenha uma boa experiência com a aplicação.
 
-Tecnologias:
+<h1>Tecnologias: ✔ </h1>
 Esse projeto não possui tecnologias populares como Angular, Vue, React por ser um projeto de início de curso, e foi desenvolvido todo com Javascript Vanilla, HTML e CSS puro. 
 Caso tenha interesse, tenho também no meu Github um projeto bem básico de cadastros de alunos em uma escola feito com React onde faço um CRUD de alunos através de uma API tambem disponivel para download no Github.
 
