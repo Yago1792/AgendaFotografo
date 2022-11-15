@@ -5,8 +5,7 @@ const express = require('express');
 const app = express();
 
 const mongoose = require('mongoose');
-mongoose.connect(process.env.CONNECTIONSTRING).then(() => { 
-    console.log('conectei a base de dados');
+mongoose.connect(process.env.CONNECTIONSTRING).then(() => {
     app.emit('ready');
 }).catch(e => console.log(e));
 
