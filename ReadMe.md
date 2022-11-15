@@ -42,6 +42,7 @@ Dica: Faça testes de adicionar dados sem preencher todos os campos. Edite ensai
 Tecnologias:
 Esse projeto não possui tecnologias populares como Angular, Vue, React por ser um projeto de início de curso, e foi desenvolvido todo com Javascript Vanilla, HTML e CSS puro. 
 Caso tenha interesse, tenho também no meu Github um projeto bem básico de cadastros de alunos em uma escola feito com React onde faço um CRUD de alunos através de uma API tambem disponivel para download no Github.
+
 Front end: https://github.com/Yago1792/Projeto_escola_frontend
 Back end: https://github.com/Yago1792/api_rest_escola_backend
 
