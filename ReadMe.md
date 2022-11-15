@@ -25,7 +25,8 @@ Opção 2:
 Caso queira rodar a aplicação localmente, você pode baixar o código através do meu GitHub. (https://github.com/Yago1792/AgendaFotografo)
 - Instalar as dependencias do projeto: npm install
 - Criar um arquivo com nome ".env" na pasta raiz do projeto. Copiar e colar o código abaixo dentro do arquivo e salva-lo (String de conexão com MongoDB):
-    CONNECTIONSTRING = 'mongodb+srv://adminAgenda:adminAgenda@agendafotografia.yupolef.mongodb.net/?retryWrites=true&w=majority'
+    CONNECTIONSTRING = 'mongodb+srv://adminAgenda:adminAgenda@agendafotografia.yupolef.mongodb.net/?retryWrites=true&w=majority'!
+    [Alt text](https://i.imgur.com/B0HLODf.png)
 - Iniciar um server local com npm start. 
 - Agora é so acessar o seu http://localhost:3000 e se divertir!
 - Você poderá fazer o login na aplicação com as seguintes credenciais:
