@@ -1,7 +1,7 @@
 ![Alt text](https://i.imgur.com/rbl7Cam.png)
 
 Olá,
-Meu nome é Yago Aguiar e falarei nesse read me um pouco sobre mim e sobre essa aplicação. Caso queira apenas saber como utiliza-la ou até mesmo como
+Falarei nesse read me um pouco sobre mim e sobre essa aplicação. Caso queira apenas saber como utiliza-la ou até mesmo como
 avalia-la, siga para a seção "Como usar:".
 
  <h1>  Quem sou eu: 😎 </h1>
