@@ -40,7 +40,7 @@ Caso queira rodar a aplicação localmente, você pode baixar o código através
 
 Novamente sugiro criar uma conta (Pode ser com dados falsos. Não é necessario confirmacao de e-mail) apenas para testes.
 
-Novamente: Note que caso voce nao crie uma conta propria para testes, voce irá ver todos os "ensaios fotograficos" agendados por alguem que ja possa ter testado a aplicação com as credenciais acima.
+Mais uma vez, note que caso voce nao crie uma conta propria para testes, voce irá ver todos os "ensaios fotograficos" agendados por alguem que ja possa ter testado a aplicação com as credenciais acima.
 
 - Pronto, agora é só preencher os campos para cadastrar um novo ensaio, editar, ou excluir um ensaio ja cadastrado.
 Dica: Faça testes de adicionar dados sem preencher todos os campos. Edite ensaios ja cadastrados. Limpe os campos de inserção de dados do ensaio com o botão clear. Exclua ensaios ou delete todos (Delete all) os ensaios cadastrados, etc, enfim, obrigado por estar aqui e espero que tenha uma boa experiência com a aplicação.
