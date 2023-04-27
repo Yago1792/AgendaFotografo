@@ -20,7 +20,7 @@ Opção 1:
     usuário: adm@adm.com
     senha: admin
 
-Ou talvez seja melhor você até criar uma conta (De preferência com dados falsos, tudo bem! Não é necessario confirmacao de e-mail) apenas para testes.
+Ou talvez seja melhor você até criar uma conta (Pode ser com dados falsos. Não é necessario confirmacao de e-mail) apenas para testes.
 
 Note que caso voce não crie uma conta propria para testes, voce irá ver todos os "ensaios fotograficos" agendados por alguem que ja possa ter testado a aplicação com as credenciais acima.
 
@@ -38,7 +38,7 @@ Caso queira rodar a aplicação localmente, você pode baixar o código através
     usuário: adm@adm.com
     senha: admin
 
-Talvez seja melhor você até criar uma conta (De preferência com dados falsos, tudo bem! Não é necessario confirmacao de e-mail) apenas para testes.
+Novamente sugiro criar uma conta (Pode ser com dados falsos. Não é necessario confirmacao de e-mail) apenas para testes.
 
 Novamente: Note que caso voce nao crie uma conta propria para testes, voce irá ver todos os "ensaios fotograficos" agendados por alguem que ja possa ter testado a aplicação com as credenciais acima.
 
